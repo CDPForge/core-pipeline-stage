@@ -5,3 +5,6 @@ pluginName: 'core-input-stage'
 pluginManagerUrl: 'https://plugin_template_url'
 priority: 0
 type: 'blocking'
+
+mysqlConfig:
+  uri: mysql://root:password@localhost:44117/main
