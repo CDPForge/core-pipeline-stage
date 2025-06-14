@@ -1,5 +1,5 @@
 {
-    "name": "plugin-pipeline-template",
+    "name": "core-pipeline-stage",
     "version": "1.0.0",
     "private": true,
     "main": "index.js",
