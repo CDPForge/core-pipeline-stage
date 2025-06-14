@@ -43,12 +43,6 @@ export default class MyPlugin {
             }));
         }
         
-        /*
-            const lookup = maxmindReader.get(ip);
-            log.geo.country = lookup?.country?.names?.en; 
-            log.geo.region = lookup?.subdivisions?.[0]?.names?.en;
-            log.geo.city = lookup?.city?.names?.en;
-        */
         return log;
     }
 }
