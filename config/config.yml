@@ -1,0 +1,7 @@
+kafkaConfig:
+  brokers:
+  -  'localhost:36715'
+pluginName: 'core-input-stage'
+pluginManagerUrl: 'https://plugin_template_url'
+priority: 0
+type: 'blocking'
