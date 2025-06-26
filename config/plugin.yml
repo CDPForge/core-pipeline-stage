@@ -1,0 +1,4 @@
+plugin:
+  name: 'core-input-stage'
+  priority: 0
+  type: 'blocking'

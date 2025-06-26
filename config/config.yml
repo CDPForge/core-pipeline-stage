@@ -1,10 +1,9 @@
 kafkaConfig:
   brokers:
   -  'localhost:36715'
-pluginName: 'core-input-stage'
+  config_topic: 'config'
+
 pluginManagerUrl: 'https://plugin_template_url'
-priority: 0
-type: 'blocking'
 
 mysqlConfig:
   uri: mysql://root:password@localhost:44117/main
