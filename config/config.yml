@@ -1,9 +1,0 @@
-kafkaConfig:
-  brokers:
-  -  'localhost:36715'
-  config_topic: 'config'
-
-pluginManagerUrl: 'https://plugin_template_url'
-
-mysqlConfig:
-  uri: mysql://root:password@localhost:44117/main
