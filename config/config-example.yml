@@ -1,0 +1,11 @@
+kafkaConfig:
+  brokers:
+  -  'localhost:36715'
+  config_topic: 'config'
+
+manager:
+  url: 'https://manager_url'
+  config_topic: 'config'
+
+mysqlConfig:
+  uri: mysql://root:password@localhost:44117/main
