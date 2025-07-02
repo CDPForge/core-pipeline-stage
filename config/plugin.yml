@@ -1,4 +1,4 @@
 plugin:
-  name: 'core-input-stage'
+  name: 'core_pipeline_stage'
   priority: 0
   type: 'blocking'

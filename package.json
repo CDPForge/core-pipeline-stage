@@ -10,7 +10,7 @@
         "start": "node --require ts-node/register ./src/index.ts",
         "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
         "build": "tsc",
-        "postbuild": "mkdir -p dist/config && cp -R ./config/plugin.yml ./dist/config/plugin.yml"
+        "postbuild": "mkdir -p dist/config && cp ./config/plugin.yml ./dist/config/plugin.yml"
     },
     "author": "CDP Forge",
     "license": "GPL-3.0",
