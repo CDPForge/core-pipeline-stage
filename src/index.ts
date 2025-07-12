@@ -1,11 +1,11 @@
 import path from 'path';
 import Plugin from './Plugin';
-import {ConfigReader, start} from '@cdp-forge/plugin-pipeline-sdk'
+import { start, clusterConfig } from '@cdp-forge/plugin-pipeline-sdk'
 import { Sequelize } from 'sequelize-typescript';
+import pluginConfig from './config/plugin'
 
-const config = ConfigReader.generate(path.join(__dirname, '../config/config.yml'), path.join(__dirname, '../config/plugin.yml'));
 const plugin = new Plugin();
-const sequelize = new Sequelize(config.mysqlConfig!.uri, {models: [path.join(__dirname, './models')]});
+const sequelize = new Sequelize(clusterConfig.mysql!.uri, {models: [path.join(__dirname, './models')]});
 
 const handleExit = async () => {
     await sequelize.close();
@@ -16,5 +16,4 @@ const handleExit = async () => {
 process.on('SIGINT', handleExit);
 process.on('SIGTERM', handleExit);
 
-
-start(plugin, config);
+start(plugin, pluginConfig);
