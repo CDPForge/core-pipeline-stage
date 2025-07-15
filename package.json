@@ -16,7 +16,7 @@
     "author": "CDP Forge",
     "license": "GPL-3.0",
     "dependencies": {
-        "@cdp-forge/plugin-pipeline-sdk": "^1.1.18",
+        "@cdp-forge/plugin-pipeline-sdk": "^1.2.0",
         "mysql2": "^3.12.0",
         "sequelize": "^6.37.5",
         "sequelize-typescript": "^2.1.6"
